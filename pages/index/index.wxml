@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class='container'>
+  <view>
+    <view class='logo-wrapper'><image src='../../ui/image/logo.jpg'/></view>
+    <view class='flex'>
+      <button class="weui-btn" type="warn" style='background:{{theme}}'>自助点单</button>
+    </view>
+    <view class='flex'>
+      <view>订单</view>
+      <view>我的</view>
+    </view>
+  </view>
+
+</view>

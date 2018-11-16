@@ -7,7 +7,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#FF9900",
+    "navigationBarBackgroundColor": "#f5f5f5",
     "navigationBarTitleText": "true点餐系统",
     "navigationBarTextStyle": "black"
   }

@@ -1,0 +1,51 @@
+/**index.wxss**/
+
+button {
+  padding-left: 50px;
+  padding-right: 40px;
+  letter-spacing: 10px;
+  line-height: 2;
+}
+
+.logo-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 25px;
+}
+
+.logo-wrapper image {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.item-wrapper {
+  padding: 15px 30px;
+}
+
+.item-wrapper .item {
+  width: 50%;
+  font-size: 14px;
+  color: #f90;
+  text-align: center;
+  background: #fff;
+  padding: 10px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.item-wrapper .item image {
+  width: 20px;
+  height: 20px;
+  vertical-align: -4px;
+}
+
+.item-wrapper .borderR::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: #e5e5e5;
+}

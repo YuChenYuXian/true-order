@@ -1,7 +1,7 @@
 {
   "pages": [
+    "pages/submit/submit",
     "pages/index/index",
-  	"pages/submit/submit",
     "pages/store/store",
     "pages/logs/logs",
     "pages/home/home",
@@ -9,7 +9,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#f5f5f5",
+    "navigationBarBackgroundColor": "#f1f1f1",
     "navigationBarTitleText": "true点餐系统",
     "navigationBarTextStyle": "black"
   }

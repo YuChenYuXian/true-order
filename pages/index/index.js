@@ -29,7 +29,7 @@ Page({
   },
   foodList: function() {
     wx.navigateTo({
-      url: '../foods/foods'
+      url: '../store/store'
     })
   },
   submitOrder: function () {

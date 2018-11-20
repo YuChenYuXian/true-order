@@ -1,0 +1,15 @@
+<!--pages/store/store.wxml-->
+<view class="container">
+  <view class="search" style="flex-direction:row;" bindtap="chooseLocation">
+    <image src='../../ui/image/search.png' /> 江苏省南通市崇川区{{locationAddress}}
+  </view>
+  <view class="tab" style="flex-direction:row;">
+    <view class="item {{num==1?'focus':''}}" bindtap="tabChanged" data-num="1">
+      定位附近门店    <image src="../../ui/image/{{num==1?'yfj':'wfj'}}.png" data-num="1"/>
+    </view>
+    <view class="item ml {{num==2?'focus':''}}" bindtap="tabChanged" data-num="2">
+      收藏的门店    <image src="../../ui/image/{{num==2?'ysc':'wsc'}}.png" data-num="2"/>
+    </view>
+  </view>
+  <text>pages/store/store.wxml</text>
+</view>

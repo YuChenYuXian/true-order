@@ -1,0 +1,9 @@
+<!--pages/submit/submit.wxml-->
+<view class='submitOrder'>
+  <view class='takeOrder item'>
+    <view class='item-hd clearfix'>
+      <view class='item-hd-time fl'>取单时间</view>
+      <view class='item-hd-take fr'>现在下单，稍后即取</view>
+    </view>
+  </view>
+</view>

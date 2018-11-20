@@ -32,6 +32,11 @@ Page({
       url: '../foods/foods'
     })
   },
+  submitOrder: function () {
+    wx.navigateTo({
+      url: '../submit/submit'
+    })
+  },
   onReady: function() {
     var _this = this;
     wx.getSystemInfo({

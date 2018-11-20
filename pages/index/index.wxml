@@ -14,7 +14,7 @@
       <button class="weui-btn" type="warn" style='background:{{theme}}' bindtap='foodList'>自助点单</button>
     </view>
     <view class='flex item-wrapper'>
-      <view class='item borderR'>
+      <view class='item borderR' bindtap='submitOrder'>
         <image src='../../ui/image/order.png' /> 订单</view>
       <view class='item'>
         <image src='../../ui/image/me.png' /> 我的</view>

@@ -49,8 +49,8 @@
   </view>
 </view>
 <view class='we-Footer'>
-  <image class='shopping-pic fl' src='../../ui/image/shopping.png' />
-  <view class='money fl'>￥34.00</view>
+  <image class='shopping-pic' src='../../ui/image/Shopping.png' />
+  <view class='money'>￥34.00</view>
   <view class='payment w-color-y'>去支付 ></view>
   <view class='shopping-num'>2</view>
 </view>

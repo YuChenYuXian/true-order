@@ -11,15 +11,22 @@
     </view>
   </view>
   <view class='orderDetail-tit'>订单详情</view>
-  <view class='takeOrder item'>
-    <view class='item-hd fgx clearfix'>
+  <view class='takeOrder item' wx:for="{{goods}}">
+    <view class='item-hd mt10 clearfix'>
+      <view class='item-kind fl'>
+        <view class='item-name'>{{item.name}}</view>
+        <view class='item-join'>{{item.mark}}</view>
+      </view>
+      <view class='item-num fr ml50'>x{{item.number}}</view>
+      <view class='item-money fr'>￥{{item.price}}</view>
+    </view>
+    <!-- <view class='item-hd fgx clearfix'>
       <view class='item-kind fl'>
         <view class='item-name'>青稞红豆牛奶/中杯</view>
         <view class='item-join'>青稞+半糖+温</view>
       </view>
       <view class='item-num fr ml50'>x1</view>
       <view class='item-money fr'>$18.0</view>
-
     </view>
     <view class='item-hd mt10 clearfix'>
       <view class='item-kind fl'>
@@ -28,8 +35,7 @@
       </view>
       <view class='item-num fr ml50'>x1</view>
       <view class='item-money fr'>$16.0</view>
-
-    </view>
+    </view> -->
   </view>
   <view class='courtesyCard item'>
     <view class='item-hd clearfix'>
@@ -50,7 +56,7 @@
 </view>
 <view class='we-Footer'>
   <image class='shopping-pic' src='../../ui/image/Shopping.png' />
-  <view class='money'>￥34.00</view>
+  <view class='money'>￥{{sum}}</view>
   <view class='payment w-color-y'>去支付 ></view>
-  <view class='shopping-num'>2</view>
+  <view class='shopping-num'>{{total}}</view>
 </view>

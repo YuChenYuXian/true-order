@@ -99,7 +99,7 @@ page { background-color: #f1f1f1; }
   font-size: 28rpx;
 }
 .we-Footer{
-  padding: 30rpx;
+  padding: 15rpx;
   background: #fff;
   position: fixed;
   bottom: 0;

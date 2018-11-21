@@ -3,7 +3,12 @@
   <view class='takeOrder item'>
     <view class='item-hd fgx clearfix'>
       <view class='item-hd-time fl'>取单时间</view>
-      <view class='item-hd-take w-color-y fr'>现在下单，稍后即取</view>
+       <view class='item-hd-take w-color-y fr'  wx:if="{{flag}}">现在下单，稍后即取</view> 
+       <view class="weui-cell__bd"  wx:else>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="weui-input">{{array[index]}}</view>
+            </picker>
+          </view>
     </view>
     <view class='item-hd clearfix'>
       <view class='item-hd-time fl'>取单地址</view>
@@ -20,22 +25,6 @@
       <view class='item-num fr ml50'>x{{item.number}}</view>
       <view class='item-money fr'>￥{{item.price}}</view>
     </view>
-    <!-- <view class='item-hd fgx clearfix'>
-      <view class='item-kind fl'>
-        <view class='item-name'>青稞红豆牛奶/中杯</view>
-        <view class='item-join'>青稞+半糖+温</view>
-      </view>
-      <view class='item-num fr ml50'>x1</view>
-      <view class='item-money fr'>$18.0</view>
-    </view>
-    <view class='item-hd mt10 clearfix'>
-      <view class='item-kind fl'>
-        <view class='item-name'>美式咖啡/L</view>
-        <view class='item-join'>浓缩咖啡+不另外加糖+热</view>
-      </view>
-      <view class='item-num fr ml50'>x1</view>
-      <view class='item-money fr'>$16.0</view>
-    </view> -->
   </view>
   <view class='courtesyCard item'>
     <view class='item-hd clearfix'>

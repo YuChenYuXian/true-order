@@ -37,6 +37,7 @@ Page({
       price: 14,
       number: 2
     }],
+    zsnum:0,
   },
 
   /**
@@ -150,11 +151,19 @@ Page({
 
   },
 
-
+  /**
+     * 备注字数
+     */
+  bindinputNum(e) {
+    this.setData({
+      zsnum: e.detail.value.length
+    })
+  },
+ 
   /**
    * 用户选择时间
    */
-  bindPickerChange(e) {
+  bindPickerChange: function(e) {
     this.setData({
       index: e.detail.value
     })

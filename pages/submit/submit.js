@@ -9,8 +9,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    flag: false,
-    array: ['中国', '美国', '巴西', '日本'],
+    flag: false,//是否可选时间
+    array: ['中国', '美国', '巴西', '日本'],//取餐时间数组
     index: 0,
     goods: [{
       id: '0001',
@@ -58,21 +58,29 @@ Page({
    */
   onShow: function() {
     const that = this;
+
+    /**
+     * 商品总数总价
+     */
     let goodsArr = that.data.goods;
-    let zs = 0;
-    let zj = 0;
+    let zs = 0;//总数
+    let zj = 0;//总价
     for (let i = 0; i < goodsArr.length; i++) {
       zs = zs + goodsArr[i].number;
       zj = zj + goodsArr[i].price * goodsArr[i].number;
     }
 
-    let jg = 15;
-    let sl = 200;
-    let now = util.formatTime(new Date());
-    let sfm = now.split(" ")[1];
-    let s = parseInt(sfm.split(":")[0]);
-    let f = parseInt(sfm.split(":")[1]);
-    if (0 <= f && f < 30) {
+
+    /**
+     * 取餐时间
+     */
+    let jg = 15;//时间间隔
+    let sl = 200;//数组长度（没用）
+    let now = util.formatTime(new Date());//当前时间
+    let sfm = now.split(" ")[1];//当前时间时分秒
+    let s = parseInt(sfm.split(":")[0]);//当前时间 时
+    let f = parseInt(sfm.split(":")[1]);//当前时间 分
+    if (0 <= f && f < 30) {//如果分钟在0-30之间
       f = 30;
     } else {
       s = s + 1;
@@ -92,9 +100,13 @@ Page({
       s = parseInt(s);
       f = parseInt(f);
       if (s == 24) {
-        break;
+        break;//当时间到24点跳出
       }
     }
+
+    /**
+     * data赋值
+     */
     that.setData({
       time: sf,
       total: zs,
@@ -139,7 +151,7 @@ Page({
   },
 
 
- /**
+  /**
    * 用户选择时间
    */
   bindPickerChange(e) {

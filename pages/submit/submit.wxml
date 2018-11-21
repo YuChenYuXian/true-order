@@ -4,7 +4,7 @@
     <view class='item-hd fgx clearfix'>
       <view class='item-hd-time fl'>取单时间</view>
        <view class='item-hd-take w-color-y fr'  wx:if="{{flag}}">现在下单，稍后即取</view> 
-       <view class="weui-cell__bd"  wx:else>
+       <view class="weui-cell__bd w-color-y fr"  wx:else>
             <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
               <view class="weui-input">{{array[index]}}</view>
             </picker>

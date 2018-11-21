@@ -47,12 +47,11 @@
   <view class='orderDetail-tit'>备注</view>
   <view class='remarks item'>
     <view class='item-hd clearfix'>
-      <view class='item-remarks w-color-g'>
-        饮品规格可参阅订单的显示，若有其他需求,请说明
-      </view>
+      <textarea class='item-remarks w-color-g' placeholder='饮品规格可参阅订单的显示，若有其他需求,请说明'></textarea> 
       <view class='w-color-g fr'>0/30个字</view>
     </view>
   </view>
+  <view class='creat'></view>
 </view>
 <view class='we-Footer'>
   <image class='shopping-pic' src='../../ui/image/Shopping.png' />

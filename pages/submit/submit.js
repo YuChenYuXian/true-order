@@ -28,7 +28,7 @@ Page({
         name: '法式奶霜烤茶/大杯',
         mark: '微糖+去冰',
         price: 14,
-        number: 1
+        number: 2
     }],
   },
 
@@ -56,7 +56,7 @@ Page({
     let zj = 0;
     for (let i = 0; i < goodsArr.length; i++) {
       zs = zs + goodsArr[i].number;
-      zj = zj + goodsArr[i].price;
+      zj = zj + goodsArr[i].price * goodsArr[i].number;
     }
     that.setData({
       total: zs,

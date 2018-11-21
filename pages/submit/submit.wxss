@@ -96,7 +96,11 @@ page { background-color: #f1f1f1; }
 
 }
 .item-remarks{
-  font-size: 28rpx;
+  min-height: 20px;
+  max-height: 50px;
+  font-size: 24rpx;
+  line-height: 24px;
+  word-wrap: break-word;
 }
 .we-Footer{
   padding: 15rpx;
@@ -130,4 +134,7 @@ page { background-color: #f1f1f1; }
   text-align: center;
   line-height: 20px;
   z-index: 9999;
+}
+.creat{
+  height: 100rpx;
 }
